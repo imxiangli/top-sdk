@@ -1,0 +1,20 @@
+{
+    "name": "imxiangli/top-sdk",
+    "type": "library",
+    "description": "TaoBaoSDK",
+    "homepage": "https://github.com/imxiangli/top-sdk",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "lixiang",
+            "email": "imxiangli@gmail.com",
+            "homepage": "http://www.hufenbao.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload" : {
+        "files": ["taobao-sdk/TopSdk.php"]
+    },
+    "require":{
+    }
+}
