@@ -13,7 +13,10 @@
         }
     ],
     "autoload" : {
-        "files": ["taobao-sdk/TopSdk.php"]
+        "files": [
+            "taobao-sdk/TopSdk.php",
+            "TopSdkYii2.php"
+        ]
     },
     "require":{
     }
