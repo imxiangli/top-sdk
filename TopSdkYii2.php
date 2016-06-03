@@ -17,7 +17,6 @@ class TopSdkYii2 extends Component
 	public $secret;
 	public $env = 't';
 	public $gatewayUrl = 'http://gw.api.taobao.com/router/rest';
-	public $gatewayUrlSandbox = 'http://gw.api.tbsandbox.com/router/rest';
 
 	private function getClient()
 	{
@@ -26,14 +25,6 @@ class TopSdkYii2 extends Component
 		$c->format = 'json';
 		$c->secretKey = $this->secret;
 		$c->gatewayUrl = $this->gatewayUrl;
-		if($this->env == 't')
-		{
-			$c->gatewayUrl = $this->gatewayUrlSandbox;
-		}
-		else
-		{
-			$c->gatewayUrl = $this->gatewayUrl;
-		}
 		return $c;
 	}
 
