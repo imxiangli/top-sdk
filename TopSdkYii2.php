@@ -111,7 +111,7 @@ class TopSdkYii2 extends Component
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
-			$req->setSummery($title);
+			$req->setSummery($content);
 			$req->setTimeout("72");
 			$req->setTitle($title);
 			$req->setType("1");
@@ -157,7 +157,7 @@ class TopSdkYii2 extends Component
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
-			$req->setSummery($title);
+			$req->setSummery($content);
 			$req->setTimeout("72");
 			$req->setTitle($title);
 			$req->setType("1");
@@ -204,7 +204,7 @@ class TopSdkYii2 extends Component
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
-			$req->setSummery($title);
+			$req->setSummery($content);
 			$req->setTimeout("72");
 			$req->setTitle($title);
 			$req->setType("1");
