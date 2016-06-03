@@ -111,7 +111,12 @@ class TopSdkYii2 extends Component
 			$req->setBody($content);
 			$req->setDeviceType("3");
 			$req->setIosBadge("1");
-			$req->setIosExtParameters(json_encode($extras));
+			$iosExtras = $extras;
+			if($this->env == 't')
+			{
+				$iosExtras['_ENV_'] = 'DEV'; // {"_ENV_": "DEV"} // 测试环境
+			}
+			$req->setIosExtParameters(json_encode($iosExtras));
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
@@ -152,7 +157,12 @@ class TopSdkYii2 extends Component
 			$req->setBody($content);
 			$req->setDeviceType("3");
 			$req->setIosBadge("1");
-			$req->setIosExtParameters(json_encode($extras));
+			$iosExtras = $extras;
+			if($this->env == 't')
+			{
+				$iosExtras['_ENV_'] = 'DEV'; // {"_ENV_": "DEV"} // 测试环境
+			}
+			$req->setIosExtParameters(json_encode($iosExtras));
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
@@ -194,7 +204,12 @@ class TopSdkYii2 extends Component
 			$req->setBody($content);
 			$req->setDeviceType("3");
 			$req->setIosBadge("1");
-			$req->setIosExtParameters(json_encode($extras));
+			$iosExtras = $extras;
+			if($this->env == 't')
+			{
+				$iosExtras['_ENV_'] = 'DEV'; // {"_ENV_": "DEV"} // 测试环境
+			}
+			$req->setIosExtParameters(json_encode($iosExtras));
 			//$req->setIosMusic("default");
 			$req->setRemind("true");
 			$req->setStoreOffline("true");
